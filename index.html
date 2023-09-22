@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Form example</title>
+        <style>
+            .labelClass{
+                display:inline-block;
+                width:150px;
+                font-weight:bold ;
+            }
+            .row{
+                margin:4px ;
+            }
+            h2{
+                text-align: center;
+            }
+            #form{
+                width:440px;
+                height:400px;
+                margin-top:10px;
+                padding:4px ;
+                border-radius:10px ;
+                background-color:rgb(239, 146, 146);
+                color:rgb(53, 29, 29);
+            }
+            #submit{
+                width: 7cm;
+                border-radius: 10px;
+                margin-top:7px;
+                color:white;
+                padding:4px;
+                font-weight:bold;
+                background-color:dodgerblue;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div id="form">
+           <h2>Registration Form</h2>
+           <form>
+            <div class="row">
+                <label class="labelClass" for="name">NAME</label>
+                <input type="text" id="name" name="name"placeholder="enter your name">        
+            </div>
+            <div class="row">
+                <label class="labelClass" for="fname">Father's Name</label>
+               <input type="text" id="fname"name="name"placeholder="enter your father's name"> 
+            </div>
+
+            <div class="row">
+                <label class="labelClass" for="fname">mother's name</label>
+               <input type="text" id="mname"name="name"placeholder="enter your morther'sname"> 
+            </div>
+ 
+            <div class="row">
+                <label class="labelClass" for="fname">Email</label>
+               <input type="text" id="email"name="email"placeholder="enter your email"> 
+            </div>
+
+            <div class="row">
+                <label class="labelClass" for="age">Age</label>
+               <input type="text" id="fname"name="name"> 
+            </div>
+
+
+        <div class="row">
+            <label class="labelClass" for="pwd">password</label>
+            <input  type="password" id="pwd"name="pwd"placeholder="enter your password">
+            </div>
+
+         <div class="row">
+            <label class="labelClass" for="psw-Repeat ">Repeat password</label>
+            <input  type="password" placeholder="psw-Repeat"id="psw-Repeat">
+             </div>
+
+            <div class="row">
+                <label class="labelClass" for="fname">date of birthday</label>
+               <input type="date" id="dob"name="dob"> 
+                </div>
+
+            <div class="row">
+                <label class="labelClass" for="bg">blood group</label>
+                <select id="bg"name="bg">
+                <option value="0 "selected>select</option>
+                <option value="A+">A+</option>
+                <option value="B+">B+</option>
+                <option value="O+">O+</option>
+               </select>
+            </div>
+
+            <div class="row">
+                <label class="labelClass">course</label>
+               <input type="checkbox" id="java"name="java"value="java"> 
+               <label for="java">java</label>
+               <input type="checkbox" id="c"name="c"value="c"> 
+               <label for="c">cc</label>
+
+               <input type="checkbox" id="python"name="python"value="python"> 
+               <label for="python">python</label>
+
+              <input type="checkbox" id="php"name="php"value="php"> 
+               <label for="php">php</label>
+
+               <input type="checkbox" id="c++"name="c++"value="c++"> 
+               <label for="c++">c++</label>
+            </div>
+
+            <div class="row">
+                <label class="labelClass" for="photo">photo</label>
+               <input type="file" id="photo"name="photo"> 
+            </div>
+            <center> 
+            <input type="submit"
+            + name="submit" id="submit">
+        </center>
+           </form>
+
+        </div>
+
+
+
+    </body>
+</html>
